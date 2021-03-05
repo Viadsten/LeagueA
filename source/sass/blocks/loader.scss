@@ -1,0 +1,54 @@
+.loader {
+  height: 100vh;
+  position: fixed;
+  width: calc(100% - 70px);
+  top: 0;
+  left: 35px;
+  max-width: $viewport--lg;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo {
+  width: 90%;
+  max-width: 800px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  // &__cap-letter, &__shield,
+  // &__a, &__small-letter {
+  //   opacity: 0;
+  // }
+}
+
+.loader__enter {
+  transition: top left $modal-transition-settings;
+  position: absolute;
+  bottom: 13%;
+  margin: 0;
+  left: 50%;
+  opacity: 0;
+  transform: translateX(-50%);
+  font-size: 24px;
+  line-height: 22px;
+  font-weight: 400;
+}
+
+.logo--loaded {
+  top: 25px;
+  left: 0;
+  transform: translate(0);
+}
+
+@media screen and (min-width: $viewport--lg) {
+  .loader {
+    left: calc(50% - 512px);
+  }
+
+  .logo--loaded {
+    left: 35px;
+  }
+}
+

@@ -18,7 +18,8 @@
 //---------------------------------
 
 @import "blocks/header";
-
+@import "blocks/loader";
+@import "blocks/main-banner.scss";
 
 // используйте это для отключения ховеров на тач устройствах
 // ! но не используйте это для текстовых полей ( input, textarea )

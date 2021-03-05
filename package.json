@@ -53,5 +53,9 @@
   },
   "engines": {
     "node": "8.15"
+  },
+  "dependencies": {
+    "core-js": "^3.9.1",
+    "regenerator-runtime": "^0.13.7"
   }
 }
